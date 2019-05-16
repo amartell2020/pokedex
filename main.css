@@ -1,0 +1,30 @@
+body {
+  background-image: url('https://images8.alphacoders.com/548/thumb-350-548142.jpg');
+}
+
+nav {
+  color: white;
+  background-color: black;
+  font-size: 70px;
+  opacity: 0.8;
+  width: 100%;
+  text-align: center;
+}
+
+#pokedex {
+  z-index: -1;
+  margin-top: 20%;
+  margin-left: 15%;
+  border-radius: 20px;
+  background-color: rgb(235, 0, 0);
+  width: 67%;
+  height: 300px;
+}
+
+#container {
+  margin-top: -30%;
+  background-color: darkgrey;
+  height: 400px;
+  width: 100%;
+  /* opacity: 0.94; */
+}
