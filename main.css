@@ -11,9 +11,15 @@ nav {
   text-align: center;
 }
 
+#container {
+  margin-top: 10%;
+  background-color: darkgrey;
+  height: 500px;
+  width: 100%;
+}
+
 #pokedex {
-  z-index: -1;
-  margin-top: 20%;
+  margin-top: -25%;
   margin-left: 15%;
   border-radius: 20px;
   background-color: rgb(235, 0, 0);
@@ -21,10 +27,9 @@ nav {
   height: 300px;
 }
 
-#container {
-  margin-top: -30%;
-  background-color: darkgrey;
-  height: 400px;
-  width: 100%;
-  /* opacity: 0.94; */
+#top-dex {
+  height: 100%;
+  width: 75%;
+  background-color: black;
+  margin-left: 12.5%;
 }
