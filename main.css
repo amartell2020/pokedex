@@ -33,3 +33,17 @@ nav {
   background-color: black;
   margin-left: 12.5%;
 }
+
+.screen {
+  margin-top: -30%;
+  margin-left: 20%;
+  color: white;
+  font-size: 20px;
+  display: grid;
+  grid-template: 100px 100px / 100px 100px 100px;
+}
+
+.screen img {
+  height: 300px;
+  width: 300px;
+}
