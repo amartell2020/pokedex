@@ -31,12 +31,20 @@ nav {
   height: 100%;
   width: 75%;
   background-color: black;
+  margin-bottom: -50%;
+  margin-left: 12.5%;
+}
+
+#bot-dex {
+  height: 100%;
+  width: 75%;
+  background-color: black;
   margin-left: 12.5%;
 }
 
 .screen {
   margin-top: -30%;
-  margin-left: 20%;
+  margin-left: 36%;
   color: white;
   font-size: 20px;
   display: grid;

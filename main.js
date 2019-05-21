@@ -29,6 +29,7 @@ displayUser = () => {
     let p3 = document.createElement('p')
     let p4 = document.createElement('p')
     let img = document.createElement('img')
+    let cap = document.createElement('caption')
 
     h1.innerText = user['name']
     img.setAttribute('src', `https://img.pokemondb.net/sprites/sun-moon/icon/${Pokemon}.png`)
@@ -36,14 +37,14 @@ displayUser = () => {
     p2.innerText = user['attack']
     p3.innerText = user['defense']
     p4.innerText = user['speed']
+    cap.innterText = user['ability1','ability2']
     cont.appendChild(h1)
     cont.appendChild(p1)
     cont.appendChild(p2)
     cont.appendChild(p3)
     cont.appendChild(p4)
     cont.appendChild(img)
+    cont.appendChild(cap)
     document.body.appendChild(cont)
     cont.classList.add('screen')
 }
-
-displayUser()
