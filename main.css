@@ -11,47 +11,35 @@ nav {
   text-align: center;
 }
 
-#container {
-  margin-top: 8%;
-  background-color: darkgrey;
-  height: 500px;
-  width: 100%;
-}
-
 #pokedex {
-  margin-top: -25%;
+  margin-top: 20%;
   margin-left: 15%;
   border-radius: 20px;
-  background-color: rgb(235, 0, 0);
+  background-color: rgb(209, 36, 36);
   width: 67%;
   height: 300px;
 }
 
-#top-dex {
-  height: 100%;
-  width: 75%;
-  background-color: black;
-  margin-bottom: -50%;
-  margin-left: 12.5%;
-}
-
 #bot-dex {
-  height: 100%;
-  width: 75%;
+  height: 400px;
+  width: 50%;
   background-color: black;
-  margin-left: 12.5%;
+  margin-left: 23%;
+  margin-top: -406px;
+  border: 3px solid red;
+  border-radius: 20px
 }
 
 #picap {
-  padding-left: 35%;
+  padding-left: 32%;
   display: grid;
-  grid-template: 400px 100px / 600px;
+  grid-template: 300px 100px / 550px;
   color: white;
   padding-bottom: 10%;
 }
 
 #caption {
-  padding-left: 14%;
+  padding-left: 10%;
   text-transform: capitalize;
   font-size: 25px;
 }
@@ -67,6 +55,7 @@ nav {
 }
 
 #pic {
-  height: 400px;
+  height: 375px;
   width: 450px;
+  margin-top: -8%;
 }

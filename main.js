@@ -1,5 +1,5 @@
 // https://fizal.me/pokeapi/api/v2/name/<name>.json
-const mon = /* prompt("Enter a pokemon name").toLowerCase() */ 390
+const mon = prompt("Enter a pokemon ID#").toLowerCase()
 requestAPI = () => {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
