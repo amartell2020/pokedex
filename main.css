@@ -12,7 +12,7 @@ nav {
 }
 
 #container {
-  margin-top: 10%;
+  margin-top: 8%;
   background-color: darkgrey;
   height: 500px;
   width: 100%;
@@ -42,16 +42,31 @@ nav {
   margin-left: 12.5%;
 }
 
-.screen {
-  margin-top: -30%;
-  margin-left: 36%;
-  color: white;
-  font-size: 20px;
+#picap {
+  padding-left: 35%;
   display: grid;
-  grid-template: 100px 100px / 100px 100px 100px;
+  grid-template: 400px 100px / 600px;
+  color: white;
+  padding-bottom: 10%;
 }
 
-.screen img {
-  height: 300px;
-  width: 300px;
+#caption {
+  padding-left: 14%;
+  text-transform: capitalize;
+  font-size: 25px;
+}
+
+.screen {
+  margin-top: -33%;
+  margin-left: 25%;
+  color: white;
+  text-transform: capitalize;
+  font-size: 20px;
+  display: grid;
+  grid-template: 150px 60px 60px 60px 60px / 400px;
+}
+
+#pic {
+  height: 400px;
+  width: 450px;
 }

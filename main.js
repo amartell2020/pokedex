@@ -1,5 +1,5 @@
 // https://fizal.me/pokeapi/api/v2/name/<name>.json
-const Pokemon = prompt("Enter a pokemon name")
+const mon = /* prompt("Enter a pokemon name").toLowerCase() */ 390
 requestAPI = () => {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -16,35 +16,44 @@ requestAPI = () => {
             }
         }
     };
-    xhttp.open("GET", `https://fizal.me/pokeapi/api/v2/name/${Pokemon}.json`, true);
+    if (isNaN(mon)){
+      xhttp.open("GET", `https://fizal.me/pokeapi/api/v2/name/${mon}.json`, true);
+    } else {
+      xhttp.open("GET", `https://fizal.me/pokeapi/api/v2/id/${mon}.json`, true);
+    }
     xhttp.send();
 }
 requestAPI()
 
 displayUser = () => {
     let cont = document.createElement('div')
-    let h1 = document.createElement('h1')
-    let p1 = document.createElement('p')
-    let p2 = document.createElement('p')
-    let p3 = document.createElement('p')
-    let p4 = document.createElement('p')
-    let img = document.createElement('img')
-    let cap = document.createElement('caption')
+    let h1 = document.getElementById('nme')
+    let p1 = document.getElementById('hp')
+    let p2 = document.getElementById('atk')
+    let p3 = document.getElementById('def')
+    let p4 = document.getElementById('spd')
+    let img = document.getElementById('pic')
+    let cap = document.getElementById('caption')
 
     h1.innerText = user['name']
-    img.setAttribute('src', `https://img.pokemondb.net/sprites/sun-moon/icon/${Pokemon}.png`)
-    p1.innerText = user['hp']
-    p2.innerText = user['attack']
-    p3.innerText = user['defense']
-    p4.innerText = user['speed']
-    cap.innterText = user['ability1','ability2']
+    if (isNaN(mon)) {
+      img.setAttribute('src', `https://img.pokemondb.net/sprites/sun-moon/icon/${mon}.png`)
+    } else {
+      img.setAttribute('src', `http://www.pokestadium.com/assets/img/sprites/${mon}.png`)
+    }
+
+    p1.innerText = `This is the hp: ${user['hp']}`
+    p2.innerText = `This is the attack: ${user['attack']}`
+    p3.innerText = `This is the defense: ${user['defense']}`
+    p4.innerText = `This is the speed: ${user['speed']}`
+    cap.innerText = `Abilities: ${user['ability1']},  ${user['ability2']}`
     cont.appendChild(h1)
     cont.appendChild(p1)
     cont.appendChild(p2)
     cont.appendChild(p3)
     cont.appendChild(p4)
-    cont.appendChild(img)
-    cont.appendChild(cap)
     document.body.appendChild(cont)
     cont.classList.add('screen')
 }
+
+setTimeout(displayUser, 300)
