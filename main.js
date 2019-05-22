@@ -42,10 +42,10 @@ displayUser = () => {
       img.setAttribute('src', `http://www.pokestadium.com/assets/img/sprites/${mon}.png`)
     }
 
-    p1.innerText = `This is the hp: ${user['hp']}`
-    p2.innerText = `This is the attack: ${user['attack']}`
-    p3.innerText = `This is the defense: ${user['defense']}`
-    p4.innerText = `This is the speed: ${user['speed']}`
+    p1.innerText = `Hp: ${user['hp']}`
+    p2.innerText = `Attack: ${user['attack']}`
+    p3.innerText = `Defense: ${user['defense']}`
+    p4.innerText = `Speed: ${user['speed']}`
     cap.innerText = `Abilities: ${user['ability1']},  ${user['ability2']}`
     cont.appendChild(h1)
     cont.appendChild(p1)

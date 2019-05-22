@@ -24,7 +24,7 @@ nav {
   height: 400px;
   width: 50%;
   background-color: black;
-  margin-left: 23%;
+  margin-left: 25%;
   margin-top: -406px;
   border: 3px solid red;
   border-radius: 20px
@@ -46,7 +46,7 @@ nav {
 
 .screen {
   margin-top: -33%;
-  margin-left: 25%;
+  margin-left: 27%;
   color: white;
   text-transform: capitalize;
   text-decoration: none;
