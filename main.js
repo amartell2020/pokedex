@@ -1,5 +1,5 @@
 // https://fizal.me/pokeapi/api/v2/name/<name>.json
-const mon = prompt("Enter a pokemon ID#").toLowerCase()
+const mon = prompt("Enter a pokemon name or ID#").toLowerCase()
 requestAPI = () => {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -37,7 +37,7 @@ displayUser = () => {
 
     h1.innerText = user['name']
     if (isNaN(mon)) {
-      img.setAttribute('src', `https://img.pokemondb.net/sprites/sun-moon/icon/${mon}.png`)
+      img.setAttribute('src', `https://play.pokemonshowdown.com/sprites/bw/${mon}.png`)
     } else {
       img.setAttribute('src', `http://www.pokestadium.com/assets/img/sprites/${mon}.png`)
     }

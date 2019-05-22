@@ -13,7 +13,7 @@ nav {
 
 #pokedex {
   margin-top: 20%;
-  margin-left: 15%;
+  margin-left: 17%;
   border-radius: 20px;
   background-color: rgb(209, 36, 36);
   width: 67%;
@@ -39,7 +39,7 @@ nav {
 }
 
 #caption {
-  padding-left: 10%;
+  padding-left: 9%;
   text-transform: capitalize;
   font-size: 25px;
 }
@@ -49,13 +49,14 @@ nav {
   margin-left: 25%;
   color: white;
   text-transform: capitalize;
+  text-decoration: none;
   font-size: 20px;
   display: grid;
-  grid-template: 150px 60px 60px 60px 60px / 400px;
+  grid-template: 140px 60px 60px 60px 60px / 400px;
 }
 
 #pic {
   height: 375px;
   width: 450px;
-  margin-top: -8%;
+  margin-top: -7%;
 }
