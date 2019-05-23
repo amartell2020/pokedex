@@ -1,4 +1,6 @@
-//const mon = prompt("Enter a pokemon name or ID#").toLowerCase()
+const you = prompt("Enter your trainer name").toUpperCase()
+let nav = document.getElementById('nav')
+nav.innerText = `Trainer ${you}`
 // https://fizal.me/pokeapi/api/v2/name/<name>.json
 requestAPI = (mon) => {
   var mon = prompt("Enter a pokemon name or ID#").toLowerCase()
