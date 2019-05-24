@@ -1,4 +1,4 @@
-const you = prompt("Enter your trainer name").toUpperCase()
+you = prompt("Enter your trainer name").toUpperCase()
 let nav = document.getElementById('nav')
 nav.innerText = `Trainer ${you}`
 // https://fizal.me/pokeapi/api/v2/name/<name>.json
@@ -17,6 +17,7 @@ requestAPI = (mon) => {
                  data['abilities'][0]['ability']['name'],
                  data['abilities'][1]['ability']['name']
             )
+            train.party.push(user)
             setTimeout(displayUser(mon), 300)
         }
     };
@@ -63,18 +64,20 @@ displayUser = (url) => {
 
 class Trainer {
   constructor(name) {
-    this.trainerName = name
-    this.buddy = []
+    this.name = name
+    this.party = []
   }
-  get(mon){
-    requestAPI(mon)
-    this.buddy.push(mon['name'])
-
+  get(name){
+    for(y=0; train.party[y][x] == name; y++) {
+      console.log(train.party[x])
+    }
   }
   all(){
-
+    return this.party
   }
 }
+
+train = new Trainer('Alex')
 
 class Pokemon {
   constructor(name, hp, attack, defense, speed, ability1, ability2){
